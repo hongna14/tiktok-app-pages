@@ -1,0 +1,133 @@
+:root {
+  --text: #1a1a1a;
+  --muted: #6b6b6b;
+  --border: #e3e3e0;
+  --bg: #ffffff;
+  --accent: #d85a30;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.7;
+}
+.wrap {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px 24px 96px;
+}
+header.page {
+  margin-bottom: 32px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border);
+}
+header.page h1 {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0 0 8px;
+}
+header.page .updated {
+  color: var(--muted);
+  font-size: 14px;
+}
+nav.crumbs {
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+nav.crumbs a {
+  color: var(--accent);
+  text-decoration: none;
+}
+nav.crumbs a:hover { text-decoration: underline; }
+h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 40px;
+  margin-bottom: 12px;
+}
+p { margin: 0 0 12px; }
+p.en {
+  color: var(--muted);
+  font-style: italic;
+}
+ul { margin: 0 0 12px; padding-left: 22px; }
+li { margin-bottom: 6px; }
+a { color: var(--accent); }
+footer.page {
+  margin-top: 56px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 13px;
+}
+.placeholder {
+  background: #fdf3ea;
+  color: #854f0b;
+  padding: 1px 4px;
+  border-radius: 3px;
+}
+nav.sitenav {
+  display: flex;
+  gap: 24px;
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--border);
+  max-width: 720px;
+  margin: 0 auto;
+  font-size: 14px;
+  font-weight: 500;
+}
+nav.sitenav a {
+  color: var(--text);
+  text-decoration: none;
+}
+nav.sitenav a.active {
+  color: var(--accent);
+}
+nav.sitenav a:hover { color: var(--accent); }
+.hero {
+  padding: 8px 0 24px;
+}
+.hero .badge {
+  display: inline-block;
+  background: #fdf3ea;
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 999px;
+  margin-bottom: 12px;
+}
+.feature-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 20px 0;
+}
+.feature-card {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
+}
+.feature-card h3 {
+  font-size: 15px;
+  margin: 0 0 6px;
+}
+.feature-card p {
+  font-size: 14px;
+  color: var(--muted);
+  margin: 0;
+}
+.faq-item {
+  border-bottom: 1px solid var(--border);
+  padding: 16px 0;
+}
+.faq-item h3 {
+  font-size: 16px;
+  margin: 0 0 8px;
+}
+@media (max-width: 600px) {
+  .feature-grid { grid-template-columns: 1fr; }
+  nav.sitenav { flex-wrap: wrap; gap: 12px 20px; }
+}
